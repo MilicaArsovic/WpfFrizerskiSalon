@@ -1,0 +1,67 @@
+﻿<Window x:Class="WpfFrizerskiSalon.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfFrizerskiSalon"
+        mc:Ignorable="d"
+        Title="Frizerski salon" Height="350" Width="686.039">
+
+    <Grid>
+        <DataGrid Name="dataGridCentralni" HorizontalAlignment="Center"    
+         VerticalAlignment="Center" Height="auto" Width="auto" AlternatingRowBackground="Aqua" IsReadOnly="True"
+           SelectionUnit="FullRow" SelectionMode="Single"/>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top" Height="30"
+            Width="auto" Orientation="Horizontal">
+            <Button Name="btnZaposleni" Content="Zaposleni" VerticalAlignment="Top" Width="75" Height="30" Click="btnZaposleni_Click"/>
+            <Button Name="btnKlijent" Content="Klijent" VerticalAlignment="Top" Width="75" Height="30" Click="btnKlijent_Click"/>
+            <Button Name="btnDobavljac" Content="Dobavljac" VerticalAlignment="Top" Width="75" Height="30" Click="btnDobavljac_Click"/>
+            <Button Name="btnUredjaj" Content="Uredjaj" VerticalAlignment="Top" Width="75" Height="30" Click="btnUredjaj_Click"/>
+            <Button Name="btnProizvod" Content="Proizvod" VerticalAlignment="Top" Width="75" Height="30" Click="btnProizvod_Click"/>
+            <Button Name="btnNabavka" Content="Nabavka" VerticalAlignment="Top" Width="75" Height="30" Click="btnNabavka_Click"/>
+            <Button Name="btnUsluga" Content="Usluga" VerticalAlignment="Top" Width="75" Height="30" Click="btnUsluga_Click"/>
+            <Button Name="btnVrstaUsluge" Content="Vrsta usluge" VerticalAlignment="Top" Width="75" Height="30" Click="btnVrstaUsluge_Click"/>
+            <Button Name="btnTermin" Content="Termin" VerticalAlignment="Top" Width="75" Height="30" Click="btnTermin_Click"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="30"
+            Width="352" Orientation="Horizontal">
+            <Button Name="btnDodajTermin" Content="Dodaj termin" VerticalAlignment="Top" Width="117" Height="30" Click="btnDodajTermin_Click"/>
+            <Button Name="btnIzmeniTermin" Content="Izmeni termin" VerticalAlignment="Top" Width="117" Height="30" Click="btnIzmeniTermin_Click"/>
+            <Button Name="btnObrisiTermin" Content="Obrisi termin" VerticalAlignment="Top" Width="117" Height="30" Click="btnObrisiTermin_Click"/>
+
+            <Button Name="btnDodajZaposlenog" Content="Dodaj zaposlenog" VerticalAlignment="Top" Width="117" Height="30" Click="btnDodajZaposlenog_Click"/>
+            <Button Name="btnIzmeniZaposlenog" Content="Izmeni zaposlenog" VerticalAlignment="Top" Width="117" Height="30" Click="btnIzmeniZaposlenog_Click"/>
+            <Button Name="btnObrisiZaposlenog" Content="Obrisi zaposlenog" VerticalAlignment="Top" Width="117" Height="30" Click="btnObrisiZaposlenog_Click"/>
+
+            <Button Name="btnDodajKlijenta" Content="Dodaj klijenta" VerticalAlignment="Top" Width="117" Height="30" Click="btnDodajKlijenta_Click"/>
+            <Button Name="btnIzmeniKlijenta" Content="Izmeni klijenta" VerticalAlignment="Top" Width="117" Height="30" Click="btnIzmeniKlijenta_Click"/>
+            <Button Name="btnObrisiKlijenta" Content="Obrisi klijenta" VerticalAlignment="Top" Width="117" Height="30" Click="btnObrisiKlijenta_Click"/>
+
+            <Button Name="btnDodajDobavljaca" Content="Dodaj dobavljaca" VerticalAlignment="Top" Width="117" Height="30" Click="btnDodajDobavljaca_Click"/>
+            <Button Name="btnIzmeniDobavljaca" Content="Izmeni dobavljaca" VerticalAlignment="Top" Width="117" Height="30" Click="btnIzmeniDobavljaca_Click"/>
+            <Button Name="btnObrisiDobavljaca" Content="Obrisi dobavljaca" VerticalAlignment="Top" Width="117" Height="30" Click="btnObrisiDobavljaca_Click"/>
+
+            <Button Name="btnDodajUredjaj" Content="Dodaj uredjaj" VerticalAlignment="Top" Width="117" Height="30" Click="btnDodajUredjaj_Click"/>
+            <Button Name="btnIzmeniUredjaj" Content="Izmeni uredjaj" VerticalAlignment="Top" Width="117" Height="30" Click="btnIzmeniUredjaj_Click"/>
+            <Button Name="btnObrisiUredjaj" Content="Obrisi uredjaj" VerticalAlignment="Top" Width="117" Height="30" Click="btnObrisiUredjaj_Click"/>
+
+            <Button Name="btnDodajProizvod" Content="Dodaj proizvod" VerticalAlignment="Top" Width="117" Height="30" Click="btnDodajProizvod_Click"/>
+            <Button Name="btnIzmeniProizvod" Content="Izmeni proizvod" VerticalAlignment="Top" Width="117" Height="30" Click="btnIzmeniProizvod_Click"/>
+            <Button Name="btnObrisiProizvod" Content="Obrisi proizvod" VerticalAlignment="Top" Width="117" Height="30" Click="btnObrisiProizvod_Click"/>
+
+            <Button Name="btnDodajNabavku" Content="Dodaj nabavku" VerticalAlignment="Top" Width="117" Height="30" Click="btnDodajNabavku_Click"/>
+            <Button Name="btnIzmeniNabavku" Content="Izmeni nabavku" VerticalAlignment="Top" Width="117" Height="30" Click="btnIzmeniNabavku_Click"/>
+            <Button Name="btnObrisiNabavku" Content="Obrisi nabavku" VerticalAlignment="Top" Width="117" Height="30" Click="btnObrisiNabavku_Click"/>
+
+            <Button Name="btnDodajUslugu" Content="Dodaj uslugu" VerticalAlignment="Top" Width="117" Height="30" Click="btnDodajUslugu_Click"/>
+            <Button Name="btnIzmeniUslugu" Content="Izmeni uslugu" VerticalAlignment="Top" Width="117" Height="30" Click="btnIzmeniUslugu_Click"/>
+            <Button Name="btnObrisiUslugu" Content="Obrisi uslugu" VerticalAlignment="Top" Width="117" Height="30" Click="btnObrisiUslugu_Click"/>
+
+            <Button Name="btnDodajVrstuUsluge" Content="Dodaj vrstu usluge" VerticalAlignment="Top" Width="117" Height="30" Click="btnDodajVrstuUsluge_Click"/>
+            <Button Name="btnIzmeniVrstuUSluge" Content="Izmeni vrstu usluge" VerticalAlignment="Top" Width="117" Height="30" Click="btnIzmeniVrstuUSluge_Click"/>
+            <Button Name="btnObrisiVrstuUsluge" Content="Obrisi vrstu usluge" VerticalAlignment="Top" Width="117" Height="30" Click="btnObrisiVrstuUsluge_Click"/>
+        </StackPanel>
+    </Grid>
+
+
+</Window>
